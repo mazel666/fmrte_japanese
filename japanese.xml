@@ -1165,9 +1165,9 @@
 				<PPM57 Name="ロングシュートを控える"/>
 				<PPM58 Name="左ウィングから 内側に切り込む"/>
 				<PPM59 Name="右ウィングから 内側に切り込む"/>
-				<PPM60 Name="Crosses early"/>
-				<PPM61 Name="Brings ball out of defence"/>
-				<PPM64 Name="Plays Ball with feet"/>
+				<PPM60 Name="アーリークロスを上げる"/>
+				<PPM61 Name="ボールをディフェンスラインから運び出す"/>
+				<PPM64 Name="足下でのプレイ"/>
 				<SaveMessage Name="プレイスタイルは保存されました"/>
 			</PreferredMoves>
 			<SquadNumber Name="番号"/>
