@@ -1087,7 +1087,7 @@
 			<PA Name="PA"/>
 			<RCA LongName="Recommended CA" Name="RCA"/>
 			<AskingPrice Name="評価額"/>
-			<Born Name="出生国"/>
+			<Born Name="誕生日"/>
 			<Age Name="年齢"/>
 			<MatchSharpness Name="マッチシャープネス"/>
 			<Condition Name="コンディション"/>
@@ -1272,11 +1272,11 @@
 				<Motive533 Name="Feels there is a lack of sufficient quality depth in the midfield area of the squad"/>
 				<!--<Motive534 Name="Feels there is a lack of sufficient quality depth up front" />-->
 
-				<Motive535 Name="Feels there is a lack of sufficient quality depth at right-back"/>
-				<Motive536 Name="Feels there is a lack of sufficient quality depth at left-back"/>
-				<Motive537 Name="Feels there is a lack of sufficient quality depth at centre-back"/>
-				<Motive538 Name="Feels there is a lack of sufficient quality depth at right wing-back"/>
-				<Motive539 Name="Feels there is a lack of sufficient quality depth at left wing-back"/>
+				<Motive535 Name="選手層にしっかりとした厚みがないと感じている 右サイドバック"/>
+				<Motive536 Name="選手層にしっかりとした厚みがないと感じている 左サイドバック"/>
+				<Motive537 Name="選手層にしっかりとした厚みがないと感じている センターバック"/>
+				<Motive538 Name="選手層にしっかりとした厚みがないと感じている 右ウィングバック"/>
+				<Motive539 Name="選手層にしっかりとした厚みがないと感じている 左ウィングバック"/>
 				<Motive540 Name="Feels there is a lack of sufficient quality depth in defensive midfield"/>
 				<Motive541 Name="Feels there is a lack of sufficient quality depth on the right of the midfield"/>
 				<Motive542 Name="Feels there is a lack of sufficient quality depth on the left of the midfield"/>
@@ -1377,6 +1377,8 @@
 				<Motive1217 Name="Unhappy that his agreed playing time has been changed from being a continental cup goalkeeper"/>
 				<Motive1218 Name="Unhappy that his agreed playing time has been changed from being a backup goalkeeper"/>
 				<Motive1219 Name="Unhappy that his agreed playing time has been changed from being an emergency backup goalkeeper"/>
+				<!--Unkown-->
+				<Motive672 Name="より強い選手層を持つクラブへの移籍を希望"/>
 			</Unhappiness>
 			<TransferStatus Name="移籍/期限付移籍ステータス">
 				<None Name="なし"/>
@@ -1517,7 +1519,7 @@
 		<GoalKeeperAttributes Name="GK能力">
 			<AerialAbility Name="空中リーチ"/>
 			<CommandOfArea Name="支配力"/>
-			<Communication Name="コーチング"/>
+			<Communication Name="コミュニケーション能力"/>
 			<Eccentricity Name="奇抜さ"/>
 			<Handling Name="ハンドリング"/>
 			<Kicking Name="キック力"/>
