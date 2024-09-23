@@ -214,7 +214,7 @@
 				<ShowGKAttributes Name="GK能力の表示"/>
 			</Attributes>
 			<Details Name="詳細">
-				<MatchExercise Name="Match Exercise"/>
+				<MatchExercise Name="コンディション"/>
 				<Morale Name="士気"/>
 				<Jadedness Name="疲労"/>
 				<MatchSharpness Name="マッチシャープネス"/>
@@ -313,7 +313,7 @@
 		<Concentration Name="集中力"/>
 		<Vision Name="視野"/>
 		<Decisions Name="判断力"/>
-		<Determination Name="勝利意欲"/>
+		<Determination Name="意志の強さ"/>
 		<Flair Name="ひらめき"/>
 		<Leadership Name="リーダーシップ"/>
 		<OffTheBall Name="オフ ザ ボール"/>
@@ -363,10 +363,10 @@
 	</PersonReputation>
 	<!-- Persons Scouting Attributes-->
 
-	<Scouting Name="Scouting">
-		<JudgingPlayerData Name="Judging Player Data"/>
-		<JudgingTeamData Name="Judging Team Data"/>
-		<PresentingData Name="Presenting Data"/>
+	<Scouting Name="スカウト">
+		<JudgingPlayerData Name="データ分析"/>
+		<JudgingTeamData Name="チーム分析"/>
+		<PresentingData Name="表示データ"/>
 	</Scouting>
 	<!-- Persons Ability-->
 
@@ -677,8 +677,8 @@
 		<UsedCapacity Name="使用席"/>
 		<ExpansionCapacity Name="拡張定員"/>
 		<PitchDimen Name="ピッチサイズ"/>
-		<Length Name="長さ:"/>
-		<Width Name="幅:"/>
+		<Length Name="長さ"/>
+		<Width Name="幅"/>
 		<IsCovered Name="屋根"/>
 		<UndersoilHeating Name="耐雪設備"/>
 		<PitchCondition Name="ピッチコンディション"/>
@@ -1218,25 +1218,25 @@
 			<ContractStarted Name="契約開始"/>
 			<WagePerWeek Name="賃金"/>
 			<ContractType Name="タイプ"/>
-			<PlayingTime Name="Playing Time">
-				<Star Name="Star"/>
-				<ImportantPlayer Name="Important Player"/>
-				<RegularStarter Name="Regular Starter"/>
-				<SquadPlayer Name="Squad Player"/>
-				<ImpactSub Name="Impact Sub"/>
-				<FringePlayer Name="Fringe Player"/>
-				<EmergencyBackup Name="Emergency Backup"/>
-				<BreakthroughProspect Name="Breakthrough Prospect"/>
-				<FutureProspect Name="Future Prospect"/>
-				<HotProspect Name="Hot Prospect"/>
-				<Youngster Name="Youngster"/>
-				<BTeamRegular Name="B Team Regular"/>
-				<FirstChoiceGoalkeeper Name="First Choice Goalkeeper"/>
-				<CupGoalkeeper Name="Cup Goalkeeper"/>
-				<DomesticCupGoalkeeper Name="Domestic Cup Goalkeeper"/>
-				<ContinentalCupGoalkeeper Name="Continental Cup Goalkeeper"/>
-				<Backup Name="Backup"/>
-				<SurplusToRequirements Name="Surplus to Requirements"/>
+			<PlayingTime Name="出場時間">
+				<Star Name="スター"/>
+				<ImportantPlayer Name="重要な選手"/>
+				<RegularStarter Name="先発レギュラー"/>
+				<SquadPlayer Name="バックアッパー"/>
+				<ImpactSub Name="スーパーサブ"/>
+				<FringePlayer Name="当落線上の選手"/>
+				<EmergencyBackup Name="緊急時の控え"/>
+				<BreakthroughProspect Name="トップチーム入り目前の有望選手"/>
+				<FutureProspect Name="将来性の高い選手"/>
+				<HotProspect Name="有望選手"/>
+				<Youngster Name="若手"/>
+				<BTeamRegular Name="Bチームのレギュラー"/>
+				<FirstChoiceGoalkeeper Name="正ゴールキーパー"/>
+				<CupGoalkeeper Name="カップ戦要員のゴールキーパー"/>
+				<DomesticCupGoalkeeper Name="国内カップ戦要員のゴールキーパー"/>
+				<ContinentalCupGoalkeeper Name="大陸カップ戦要員のゴールキーパー"/>
+				<Backup Name="バックアップ"/>
+				<SurplusToRequirements Name="要求戦力に満たない余剰人員"/>
 			</PlayingTime>
 			<Unhappiness Name="">
 				<RemoveAll Name="Remove All"/>
@@ -1378,7 +1378,10 @@
 				<Motive1218 Name="Unhappy that his agreed playing time has been changed from being a backup goalkeeper"/>
 				<Motive1219 Name="Unhappy that his agreed playing time has been changed from being an emergency backup goalkeeper"/>
 				<!--Unkown-->
+				<Motive629 Name="自身の能力に見合った新契約を希望している"/>
 				<Motive672 Name="より強い選手層を持つクラブへの移籍を希望"/>
+				<Motive675 Name="クラブの降格に伴い退団を希望している"/>
+				<Motive701 Name="###TEAM-1###に加入できずがっかりしている"/>
 			</Unhappiness>
 			<TransferStatus Name="移籍/期限付移籍ステータス">
 				<None Name="なし"/>
@@ -1537,7 +1540,7 @@
 			<Concentration Name="集中力"/>
 			<Vision Name="視野"/>
 			<Decisions Name="判断力"/>
-			<Determination Name="勝利意欲"/>
+			<Determination Name="意志の強さ"/>
 			<Flair Name="ひらめき"/>
 			<Leadership Name="リーダーシップ"/>
 			<OffTheBall Name="オフ ザ ボール"/>
@@ -1691,17 +1694,17 @@
 			</CoachingQualifications>
 		</Staff>
 		<StaffRating Name="トレーニング評価">
-			<FitnessStrengthRating Name="体力"/>
-			<FitnessQuicknessRating Name="Quickness"/>
-			<GoalkeepingShotStoppingRating Name="GK - Shot Stopping"/>
-			<GoalkeepingHandlingAndDistributionRating Name="GK - Handling &amp; Distribution"/>
-			<DefendingTacticalRating Name="守備 - 戦術l"/>
+			<FitnessStrengthRating Name="強靱さ"/>
+			<FitnessQuicknessRating Name="速さ"/>
+			<GoalkeepingShotStoppingRating Name="ゴールキーパー - シュートストップ"/>
+			<GoalkeepingHandlingAndDistributionRating Name="ゴールキーパー - ハンドリングと配球"/>
+			<DefendingTacticalRating Name="守備 - 戦術"/>
 			<DefendingTechnicalRating Name="守備 - 技術"/>
 			<AttackingTacticalRating Name="攻撃 - 戦術"/>
 			<AttackingTechnicalRating Name="攻撃 - 技術"/>
-			<PossessionTacticalRating Name="Possession - 戦術"/>
-			<PossessionTechnicalRating Name="Possession - 技術"/>
-			<SetPiecesOverallRating Name="Set Pieces - Overall"/>
+			<PossessionTacticalRating Name="ポゼッション - 戦術"/>
+			<PossessionTechnicalRating Name="ポゼッション - 技術"/>
+			<SetPiecesOverallRating Name="セットプレイ - 総合"/>
 		</StaffRating>
 		<ChairmanAttributes Name="会長能力">
 			<Business Name="ビジネス"/>
@@ -1713,37 +1716,37 @@
 			<Attacking Name="攻撃指導"/>
 			<Defending Name="守備指導"/>
 			<Fitness Name="フィットネス指導"/>
-			<GKDistribution Name="GK Distribution"/>
-			<GKHandling Name="GK Handling"/>
-			<GKShotStopping Name="GK Shot Stopping"/>
+			<GKDistribution Name="GKからの配球"/>
+			<GKHandling Name="GKのハンドリング"/>
+			<GKShotStopping Name="GKのシュートストップ"/>
 			<Mental Name="メンタル指導"/>
 			<Player Name="在籍選手に関する知識"/>
 			<Tactical Name="戦術指導"/>
-			<Technical Name="技術指導"/>
+			<Technical Name="テクニカル"/>
 			<ManManagement Name="選手管理"/>
 			<WorkingWithYoungsters Name="若手指導"/>
 			<DirtinessAllowance Name="Dirtiness Allowance"/>
 			<Versatility Name="Versatility"/>
-			<SetPieces Name="Set Pieces"/>
+			<SetPieces Name="セットプレイ"/>
 		</CoachingAttributes>
 		<StaffMentalAttributes Name="メンタル能力">
 			<Adaptability Name="環境適応"/>
-			<Determination Name="勝利意欲"/>
+			<Determination Name="意志の強さ"/>
 			<JudgingPlayerAbility Name="選手の能力判定"/>
 			<JudgingPlayerPotential Name="選手の潜在能力判定"/>
-			<Negotiating Name="Negotiating"/>
+			<Negotiating Name="交渉"/>
 			<LevelOfDiscipline Name="規律性"/>
 			<Motivating Name="モチベーション管理"/>
 			<Physiotherapy Name="理学療法"/>
-			<SportsScience Name="Sports science"/>
+			<SportsScience Name="スポーツ科学"/>
 			<TacticalKnowledge Name="戦術知識"/>
-			<JudgingStaffAbility Name="Judging Staff Ability"/>
+			<JudgingStaffAbility Name="スタッフの実力判定"/>
 		</StaffMentalAttributes>
 		<StaffPersonality Name="性格">
 			<Adaptability Name="環境適応"/>
 			<Ambition Name="野心"/>
 			<Controversy Name="議論好き"/>
-			<Determination Name="勝利意欲"/>
+			<Determination Name="意志の強さ"/>
 			<Loyalty Name="忠誠心"/>
 			<Pressure Name="プレッシャー"/>
 			<Professionalism Name="プロ意識"/>
@@ -1767,11 +1770,11 @@
 			<Chairman Name="会長"/>
 			<DirectorOfFootball Name="フットボールディレクター"/>
 			<HeadOfYouthDevelopment Name="ユース育成責任者"/>
-			<DataAnalyst Name="Data Analyst"/>
-			<SportsScientist Name="Sports Scientist"/>
-			<LoanManager Name="Loan Manager"/>
-			<TechnicalDirector Name="Technical Director"/>
-			<SetPieceCoach Name="Set Piece Coach"/>
+			<DataAnalyst Name="データアナリスト"/>
+			<SportsScientist Name="スポーツ科学者"/>
+			<LoanManager Name="ローンマネージャー"/>
+			<TechnicalDirector Name="テクニカルディレクター"/>
+			<SetPieceCoach Name="セットプレイコーチ"/>
 		</RolesAttributes>
 		<TacticalAttributes Name="戦術能力">
 			<Attacking Name="攻撃的"/>
@@ -2091,7 +2094,7 @@
 			<YearlyWageRise Name="毎年の昇給"/>
 			<PromotionWageRise Name="昇格失敗した場合の昇給"/>
 			<RelegationWageDrop Name="降格した場合の減給"/>
-			<NonPlayingJobOfferReleaseClause Name="Non Playing Job Offer Release"/>
+			<NonPlayingJobOfferReleaseClause Name="スタッフ契約解除金"/>
 			<ReleaseAtAnyTimeClause Name="常時契約解除条項"/>
 			<SellOnFeePercentage Name="次回移籍金からの支払い"/>
 			<SellOnFeeProfitPercentage Name="次回売却益からの支払い"/>
@@ -2099,22 +2102,22 @@
 			<OneYearExtensionAfterLeagueGames_FinalSeason Name="リーグ戦出場後の規定到達 (最終シーズン)で1年契約延長"/>
 			<MatchHighestEarnerClause Name="クラブ最高給与条項を適用"/>
 			<WageAfterReachingClubLeagueGames Name="クラブのリーグ戦規定試合数達成後の給与"/>
-			<TopDivisionPromotionWageRise Name="Top DivisionPromotion Wage Rise"/>
-			<TopDivisionRelegationWageDrop Name="Top DivisionRelegation Wage Drop"/>
+			<TopDivisionPromotionWageRise Name="上位ディビジョン昇格時の昇給"/>
+			<TopDivisionRelegationWageDrop Name="上位ディビジョンから降格時の減給"/>
 			<MinimumFeeRelease_ForeignClubs Name="契約解除最低額 (国外クラブ)"/>
 			<MinimumFeeRelease_HigherDivisionClubs Name="契約解除最低額 (国内上位ディビジョン所属クラブ)"/>
 			<MinimumFeeRelease_DomesticClubs Name="契約解除最低額 (国内クラブ))"/>
-			<WageAfterReachingIntApps Name="Wage After Reaching Int Apps"/>
-			<PercentageOfWages_PaidBySponsor Name="Percentage Of Wages Paid By Sponsor"/>
-			<PercentageOfGateReceiptsPaidToPlayer Name="Percentage Of Gate Receipts Paid ToPlayer"/>
-			<OptionalContractExtensionByClub Name="Optional Contract Extension By Club"/>
-			<WaiveClubCompensationForManagerialRole Name="Waive Club Compensation For Managerial Role"/>
-			<PercentageOfClubCompensationRequiredForManagerialRole Name="Percentage Of Club Compensation Required For Managerial Role"/>
-			<OneYearExtensionAfterLeagueGames_PromotedFinalSeason Name="1 Year Extension After League Games (Promoted Final Season)"/>
-			<OnyYearExtensionAfterLeagueGames_AvoidRelegationFinalSeason Name="1 Year Extension After League Games (Avoid Relegation Final Season)"/>
+			<WageAfterReachingIntApps Name="国際試合出場数達成後の給与"/>
+			<PercentageOfWages_PaidBySponsor Name="スポンサーから支払われる給与の割合"/>
+			<PercentageOfGateReceiptsPaidToPlayer Name="選手に支払われる入場料収入の割合"/>
+			<OptionalContractExtensionByClub Name="クラブによる契約延長オプション"/>
+			<WaiveClubCompensationForManagerialRole Name="監督引き抜き時のクラブ補償金を放棄"/>
+			<PercentageOfClubCompensationRequiredForManagerialRole Name="監督引き抜き時に要求されるクラブ補償金の割合"/>
+			<OneYearExtensionAfterLeagueGames_PromotedFinalSeason Name="リーグ戦出場数の規定到達 (最終シーズンに昇進を決めた場合)で1年契約延長"/>
+			<OnyYearExtensionAfterLeagueGames_AvoidRelegationFinalSeason Name="リーグ戦出場数の規定到達 (最終シーズンに降格を回避した場合)で1年契約延長"/>
 			<MinimumFeeRelease_ClubsInChampionsCup Name="Minimum Fee Release (Clubs In Champions Cup)"/>
-			<MLSGuaranteedContract Name="MLS Guaranteed Contract"/>
-			<ContractExtensionAfterPromotion Name="Contract Extension After Promotion"/>
+			<MLSGuaranteedContract Name="MLS保証契約条項"/>
+			<ContractExtensionAfterPromotion Name="昇格達成後に契約延長"/>
 			<InjuryReleaseClause Name="故障放出条項"/>
 			<MinimumFeeRelease_ClubsInContinentalCompetition Name="契約解除最低額 (大陸大会参戦中のクラブ)"/>
 			<AppearanceFee Name="Appearance Fee"/>
@@ -2128,11 +2131,11 @@
 			<PercentageOfWagesPaidByFormerClub Name="Percentage of Wages Paid by Former Club"/>
 			<AssistBonus Name="Assist Bonus"/>
 			<GoalsAssistsCombined Name="Goals/Assists"/>
-			<Type Name="Type"/>
-			<Value Name="Value"/>
-			<Games Name="Games"/>
-			<Goals Name="Goals"/>
-			<Percentage Name="Percentage"/>
+			<Type Name="タイプ"/>
+			<Value Name="値"/>
+			<Games Name="試合"/>
+			<Goals Name="ゴール"/>
+			<Percentage Name="パーセンテージ"/>
 			<WageAfterReachingIntApps Name="Wage After Reaching International Appearances"/>
 			<OptionalContractExtensionByClub Name="Optional Contract Extension By Club"/>
 			<SeasonalLandmarkCombinedGoalAndAssistBonus Name="Seasonal Landmark Combined Goal And Assist Bonus"/>
@@ -2885,12 +2888,12 @@
 		<AstManager Name="アシスタントマネージャー"/>
 		<FitnessCoach Name="フィットネスコーチ"/>
 		<GKCoach Name="GKコーチ"/>
-		<SportsScientist Name="Sports Scientist"/>
+		<SportsScientist Name="スポーツ科学者"/>
 		<FirstTeamCoach Name="トップチームコーチ"/>
 		<GeneralManager Name="ゼネラルマネージャー"/>
 		<CaretakerManager Name="暫定監督"/>
 		<ManagerU19 Name="U19 監督"/>
-		<HeadOfSportsScience Name="Head of Sports Science"/>
+		<HeadOfSportsScience Name="スポーツ科学責任者"/>
 		<HeadOfYouthDevelopment Name="ユース育成責任者"/>
 		<HeadPhysio Name="ヘッドフィジオ"/>
 		<ChiefScout Name="チーフスカウト"/>
@@ -2899,24 +2902,24 @@
 		<Doctor Name="ドクター"/>
 		<ChiefDataAnalyst Name="チーフデータアナリスト"/>
 		<DataAnalyst Name="データアナリスト"/>
-		<TechnicalDirector Name="Technical Director"/>
-		<LoanManager Name="Loan Manager"/>
-		<RecruitmentAnalyst Name="Recruitment Analyst"/>
-		<HeadPerformanceAnalyst Name="Head Performance Analyst"/>
-		<PerformanceAnalyst Name="Performance Analyst"/>
-		<President Name="President"/>
-		<Under18sTechnicalDirector Name="Under 18s Technical Director"/>
+		<TechnicalDirector Name="テクニカルディレクター"/>
+		<LoanManager Name="ローンマネージャー"/>
+		<RecruitmentAnalyst Name="採用アナリスト"/>
+		<HeadPerformanceAnalyst Name="パフォーマンスアナリスト責任者"/>
+		<PerformanceAnalyst Name="パフォーマンスアナリスト"/>
+		<President Name="社長"/>
+		<Under18sTechnicalDirector Name="U18 テクニカルディレクター"/>
 		<Under21sCoach Name="Under 21s Coach"/>
-		<Under18sGoalkeepingCoach Name="Under 18s Goalkeeping Coach"/>
-		<Under18sGoalkeepingCoach Name="Under 18s Goalkeeping Coach"/>
-		<Under18sAssistantManager Name="Under 18s Assistant Manager"/>
-		<Under18sManager Name="Under 18s Manager"/>
-		<Under18sPerformanceAnalyst Name="Under 18s Performance Analyst"/>
-		<Under18sFitnessCoach Name="Under 18s Fitness Coach"/>
-		<Under18sChiefScout Name="Under 18s Chief Scout"/>
-		<Under18sSportsScientist Name="Under 18s Sports Scientist"/>
-		<Player Name="Player"/>
-		<SetPieceCoach Name="Set Piece Coach"/>
+		<Under18sGoalkeepingCoach Name="U18 GKコーチ"/>
+		<Under18sGoalkeepingCoach Name="U18 GKコーチ"/>
+		<Under18sAssistantManager Name="U18 アシスタントマネージャー"/>
+		<Under18sManager Name="U18 監督"/>
+		<Under18sPerformanceAnalyst Name="U18 パフォーマンスアナリスト"/>
+		<Under18sFitnessCoach Name="U18 フィットネスコーチ"/>
+		<Under18sChiefScout Name="U18 チーフスカウト"/>
+		<Under18sSportsScientist Name="U18 スポーツ科学者"/>
+		<Player Name="選手"/>
+		<SetPieceCoach Name="セットプレイコーチ"/>
 	</JobType>
 	<Menus>
 		<CopyToClipBoard Name="クリップボードに名前をコピー"/>
@@ -3077,7 +3080,7 @@
 			<TrainedAtCurrentClub Name="Trained at club"/>
 			<TrainedInCurrentNation Name="Trained at nation"/>
 			<CreateHistoryPoint Name="Create history point"/>
-			<ImproveTeamCohesion Name="Improve Team Cohesion"/>
+			<ImproveTeamCohesion Name="チームの結束力を高める"/>
 			<DestroyTeamCohesion Name="Destroy Team Cohesion"/>
 		</CustomPresetType>
 		<CustomAction>
@@ -3103,7 +3106,7 @@
 			<TrainedAtCurrentClub Name="Trained at club"/>
 			<TrainedInCurrentNation Name="Trained at nation"/>
 			<CreateHistoryPoint Name="Create history point"/>
-			<ImproveTeamCohesion Name="Improve Team Cohesion"/>
+			<ImproveTeamCohesion Name="チームの結束力を高める"/>
 		</PlayersPresets>
 		<Presets Name="Presets"/>
 		<ActionDescriptions>
